@@ -1,0 +1,57 @@
+:root{
+    font-size: 16px;
+}
+
+
+
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+
+.header{
+    display: grid;
+    grid-template-rows: 8vh;
+    grid-template-columns: 30% auto 30%;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+    padding: 0 2rem;
+}
+
+.left>div{
+    padding: 1rem;
+}
+
+.right{
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: auto auto auto auto;
+    padding: 0 2rem;
+}
+.right>div{
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+.gmail{
+
+}
+.imagenes{
+
+}
+.menu{
+
+}
+.sesion{
+
+}
