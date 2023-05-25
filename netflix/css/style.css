@@ -69,7 +69,52 @@ height: 2rem;
 width: auto;
 }
 
+.info{
+display: block;
 
 
+}
 
-info
+.row{
+    padding: 1rem 1rem;
+}
+
+.row-title{
+    font-size: 1.2rem;
+    padding:1rem 0;
+    color:#cfcfcf;
+}
+
+.row-films{
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding:1rem 0;
+}
+
+.film{
+margin:0 0.5rem;
+}
+
+.film>img{
+    width: 16rem;
+}
+
+
+.footer{
+    
+    padding:5rem;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    align-items: start;
+    justify-content: space-between
+}
+
+.column{
+    display: block;
+}
