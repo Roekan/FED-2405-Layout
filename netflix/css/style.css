@@ -18,12 +18,17 @@ a{
     text-decoration: none;
 }
 
-
+/*HEADER*/
 .header{
     display: grid;
     grid-template-rows: 8vh;
     grid-template-columns: 50% auto 20%;
     background-color: #000;
+}
+
+
+.header a:hover{
+    color: #d1d1d1;
 }
 
 .left{
@@ -62,12 +67,28 @@ a{
 
 .right>div{
     margin: 0 0.5rem;
+    padding: 0.1rem;
+    border-radius: 2rem;
+}
+
+.right>div:hover{
+    background-color: rgba(255,255,255,0.3);
+
 }
 
 .search svg, .gift  svg, .notifications  svg, .user  svg{
 height: 2rem;
 width: auto;
 }
+
+
+
+
+/*INFO*/
+
+
+
+
 
 .info{
 display: block;
@@ -79,6 +100,9 @@ display: block;
     padding: 1rem 1rem;
 }
 
+
+
+
 .row-title{
     font-size: 1.2rem;
     padding:1rem 0;
@@ -89,10 +113,29 @@ display: block;
     display: flex;
     gap: 5px;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type:mandatory;
     scrollbar-width: none;
     padding:1rem 0;
 }
+
+
+
+.row-films::-webkit-scrollbar {
+    height: 0.8rem;          /* width of the entire scrollbar */
+}
+
+.row-films::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.2);   
+    border-radius: 2rem;
+     /* color of the tracking area */
+}
+
+.row-films::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.8);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+
 
 .film{
 margin:0 0.5rem;
@@ -102,6 +145,7 @@ margin:0 0.5rem;
     width: 16rem;
 }
 
+/*FOOTER*/
 
 .footer{
     border-top:0.5rem solid #232323;
@@ -153,3 +197,7 @@ margin:0 0.5rem;
     text-decoration: underline;
     color:red;
 }
+
+
+
+@media
