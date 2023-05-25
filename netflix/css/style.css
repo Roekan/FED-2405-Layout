@@ -45,6 +45,11 @@ a{
     height: auto;
 }
 
+.logo-movil{
+    width:1rem;
+    display:none;
+}
+
 .menu a{
     margin:0 1rem;
 }
@@ -200,4 +205,135 @@ margin:0 0.5rem;
 
 
 
-@media
+@media only screen and (max-width: 768px) {
+
+/*Header*/
+
+
+.header{
+    display: grid;
+    grid-template-rows: 8vh;
+    grid-template-columns: 70% auto 30%;
+    background-color: #000;
+}
+
+
+.left {
+    padding: 0 0.4rem;
+    font-size: 0.6rem;
+    align-items: center;
+}
+
+.logo-imagen{
+    width:6rem;
+    height: auto;
+}
+
+.menu a{
+    margin: 0 0.3rem;
+    text-align: center;
+}
+
+.right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 1rem;
+}
+
+.right>div{
+    margin: 0 0.1rem;
+
+}
+
+
+.search svg, .gift  svg, .notifications  svg, .user  svg{
+height: 1.6rem;
+width: auto;
+}
+
+/*INFO*/
+
+.row-title{
+    font-size: 1rem;
+    padding:0.2rem 0;
+    color:#cfcfcf;
+}
+
+.row-films{
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    scroll-snap-type:mandatory;
+    scrollbar-width: none;
+    padding:0.6rem 0;
+}
+
+
+.film{
+    margin:0 0.5rem;
+}
+    
+.film>img{
+    width: 12rem;
+}
+
+.row-films::-webkit-scrollbar {
+    
+    display: none;       
+}
+
+/*FOOTER*/
+
+
+.footer{
+    border-top:0.5rem solid #232323;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding:5rem 1rem;
+    padding-bottom: 0;
+    display: block;
+    font-size: 0.9rem;
+}
+
+
+
+.preguntas,.copyright{
+
+    color: rgba(255, 255, 255, 0.7);;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    margin-left: 0.4rem;
+}
+
+.copyright{
+    margin-top: 3rem;
+
+}
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    .header{
+        display: block;
+        grid-template-rows: 8vh;
+        grid-template-columns: 70% auto 30%;
+        background-color: #000;
+    }
+
+    .logo-movil{
+    display: block;
+        }
+
+    .logo{
+        display:none;
+    }
+
+
+
+
+}
