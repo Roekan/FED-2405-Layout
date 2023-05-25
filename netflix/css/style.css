@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #202125;
+    background-color: #000;
 }
 
 *{
@@ -23,7 +23,7 @@ a{
     display: grid;
     grid-template-rows: 8vh;
     grid-template-columns: 50% auto 20%;
-    background-color: #202125;
+    background-color: #000;
 }
 
 .left{
@@ -36,7 +36,7 @@ a{
 
 
 .logo-imagen{
-    width:6rem;
+    width:7rem;
     height: auto;
 }
 
@@ -104,9 +104,29 @@ margin:0 0.5rem;
 
 
 .footer{
-    
-    padding:5rem;
+    border-top:0.5rem solid #232323;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding:0rem 10rem;
+    padding-top:5rem;
+    padding-right: 22rem;
     display: block;
+    font-size: 0.9rem;
+}
+
+
+
+.preguntas,.copyright{
+
+    color: rgba(255, 255, 255, 0.7);;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.copyright{
+    margin-top: 4rem;
+
 }
 
 .menu{
@@ -117,4 +137,19 @@ margin:0 0.5rem;
 
 .column{
     display: block;
+}
+
+.column>div{
+    margin:1rem 0;
+}
+
+.footer a{
+    text-decoration: underline;
+    color:rgba(255, 255, 255, 0.7);
+}
+
+
+.column a:active{
+    text-decoration: underline;
+    color:red;
 }
