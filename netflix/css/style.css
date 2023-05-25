@@ -46,7 +46,6 @@ a{
 }
 
 .logo-movil{
-    width:1rem;
     display:none;
 }
 
@@ -178,7 +177,7 @@ margin:0 0.5rem;
 
 }
 
-.menu{
+.footer-menu{
     display: flex;
     align-items: start;
     justify-content: space-between
@@ -318,12 +317,15 @@ width: auto;
 
 @media only screen and (max-width: 320px) {
 
+
+    /*header*/
     .header{
         display: block;
         grid-template-rows: 8vh;
         grid-template-columns: 70% auto 30%;
         background-color: #000;
     }
+    
 
     .logo-movil{
     display: block;
@@ -333,7 +335,56 @@ width: auto;
         display:none;
     }
 
+    .logo-imagen-movil{
+        width: 3rem;
+    }
+
+    .right{
+        justify-content: center;
+    }
 
 
 
+/*info*/
+
+.row{
+    padding: 0vw 1vw;
+
+}
+
+.row-title{
+    font-size: 1rem;
+    padding:1rem 0;
+    padding-bottom: 0.2rem;
+    color:#cfcfcf;
+}
+
+.film{
+    margin:0 0.2rem;
+}
+    
+.film>img{
+    width: 10rem;
+}
+
+
+
+/*footer*/
+
+.preguntas, .copyright{
+    padding:0rem 1.6rem;
+}
+
+    .footer-menu{
+        display: block;
+        padding:0rem 2rem;
+    }
+    .column{
+margin:2.2rem 0;
+    }
+
+
+    .column>div{
+        margin:0.6rem 0;
+            }
 }
